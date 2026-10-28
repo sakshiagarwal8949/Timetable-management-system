@@ -1,6 +1,29 @@
 # 🎓 Timetable Management System (MERN Stack)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://timetable-management-system-three.vercel.app/login)
+[![API Server](https://img.shields.io/badge/API_Server-Render-46E3B7?style=for-the-badge&logo=render)](https://timetable-management-system-x4qr.onrender.com)
+[![React](https://img.shields.io/badge/React_19-Vite-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)](https://nodejs.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)](https://mongodb.com)
+
 A comprehensive full-stack **MERN (MongoDB, Express, React, Node.js)** web application built for colleges and institutions to facilitate timetable scheduling, intelligent conflict prevention, and personalized role-based dashboards (Admin, Faculty, Student).
+
+---
+
+## 🌐 Live Demo & Credentials
+
+- 🔗 **Live Application (Frontend):** [https://timetable-management-system-three.vercel.app/login](https://timetable-management-system-three.vercel.app/login)
+- ⚙️ **REST API Server (Backend):** [https://timetable-management-system-x4qr.onrender.com](https://timetable-management-system-x4qr.onrender.com)
+
+### 🔑 Demo Accounts for Testing:
+| Role | Email | Password | Permissions |
+| :--- | :--- | :--- | :--- |
+| **👑 Admin** | `admin@gmail.com` | `admin` | Full control: create timetables, provision faculties & students, detect conflicts |
+| **👨‍🏫 Faculty** | `faculty@gmail.com` | `faculty123` | View assigned lectures, schedule details, classroom numbers |
+| **🎓 Student** | `sakshi@gmail.com` | `sakshi123` | View personal section timetable, faculty assignments & timings |
+
+*(The login page also provides one-click quick demo login buttons!)*
+
 
 ---
 
