@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background: #e5e7eb;
+  color: #1f2937;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 28px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-card h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.welcome-card p {
+  margin-top: 6px;
+}
+
+.welcome-card button {
+  background: white;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 0 auto 24px;
+  width: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  color: #111827;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.form-group input[readonly] {
+  background: #f3f4f6;
+}
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.form-buttons button {
+  flex: 1;
+  min-width: 150px;
+}
+
+form > button {
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.card > button {
+  margin-top: 12px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+  background: white;
+}
+
+thead {
+  background: #1e40af;
+  color: white;
+}
+
+th,
+td {
+  padding: 13px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: #eff6ff;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td button {
+  margin: 2px 4px 2px 0;
+  padding: 8px 11px;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+td button:last-child {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.card > p {
+  margin-top: 16px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 14px;
+  }
+
+  .welcome-card {
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .welcome-card h1 {
+    font-size: 23px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+}
