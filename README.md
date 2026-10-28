@@ -1,4 +1,4 @@
-# 🎓 Timetable Management System (MERN Stack)
+# 🎓 Timetable Generator & Management
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://timetable-management-system-three.vercel.app/login)
 [![API Server](https://img.shields.io/badge/API_Server-Render-46E3B7?style=for-the-badge&logo=render)](https://timetable-management-system-x4qr.onrender.com)
