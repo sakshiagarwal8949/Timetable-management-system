@@ -104,3 +104,37 @@ Open your web browser and navigate to **`http://localhost:5173`** to access the 
 For in-depth details on endpoints, schemas, and components:
 - [Backend Documentation](file:///c:/Users/saksh/Documents/MERN_Project/backend/readme.md)
 - [Frontend Documentation](file:///c:/Users/saksh/Documents/MERN_Project/frontend/README.md)
+
+---
+
+## 🌐 Deployment Guide (GitHub + Render + Vercel)
+
+### Step 1: Push Code to GitHub
+```bash
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+git push -u origin main
+```
+
+### Step 2: Deploy Backend on Render (Free)
+1. Go to [render.com](https://render.com) and create an account.
+2. Click **New +** -> **Web Service** -> Connect your GitHub repo.
+3. Configure settings:
+   - **Root Directory**: `backend`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+4. Add **Environment Variables**:
+   - `MONGO_URI`: `your_mongodb_atlas_connection_string`
+   - `JWT_SECRET`: `your_jwt_secret`
+   - `PORT`: `3000`
+5. Click **Deploy Web Service** and copy your backend URL (e.g., `https://timetable-api.onrender.com`).
+
+### Step 3: Deploy Frontend on Vercel (Free)
+1. Go to [vercel.com](https://vercel.com) and connect your GitHub account.
+2. Click **Add New...** -> **Project** -> Select your repo.
+3. In configure project settings:
+   - **Root Directory**: Click edit and select `frontend`
+   - **Framework Preset**: `Vite`
+4. Add **Environment Variable**:
+   - `VITE_API_URL`: `https://timetable-api.onrender.com` (Your Render backend URL without trailing slash)
+5. Click **Deploy**. Your app is live!
+
